@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbkyqav71d0n7"]
+
+[ext_resource type="Script" path="res://BoundingBox.gd" id="1_1ydyg"]
+[ext_resource type="Script" path="res://addons/draw3d/draw_3d.gd" id="2_w6a2n"]
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_lv23s"]
+
+[node name="BoundingBox" type="Node3D"]
+script = ExtResource("1_1ydyg")
+
+[node name="MeshInstance" type="MeshInstance3D" parent="."]
+cast_shadow = 0
+mesh = SubResource("ImmediateMesh_lv23s")
+script = ExtResource("2_w6a2n")
